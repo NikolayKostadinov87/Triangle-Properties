@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="DrawingTriangle.js"></script>
+	<style type="text/css">
+	html, body {
+		margin: 0px;
+	}
+
+	canvas{
+		display: block;
+    position: fixed;
+	}
+  
+  #container{
+    height: 400px;
+    position: block;
+    width: 400px;
+  }
+  #controls
+  {
+    bottom:560px;
+    display:block;
+    position: fixed;
+  }
+
+  #buttons{
+    top: 2px;
+    left: 2px;
+    display: block;
+    position: fixed;
+  }
+
+  .button {
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1{
+  background-color: #008CBA;
+}
+
+.button2 {
+  background-color: #3d443d;
+}
+
+	</style>
+</head>
+<body>
+<div id="container">
+<canvas id="canvas"></canvas>
+  <menu id="controls">
+    <div id="buttons">
+    <button class="button button1" id = "excirclesoftr" type="button" value="Excircles of the triangle" onclick="exCirclesOn()">Excircles of the triangle</button>
+    <button class="button button2" id="undoex" style="display:none;" type="button" value="Undo" onclick="exCirclesOff()">Undo Excircles of the triangle</button>
+    <button class="button button1" id = "extouchtr" type="button" value="Extouch triangle" onclick="exTouchOn()">Extouch triangle</button>
+    <button class="button button2" id="undoextouchtr" style="display:none;" type="button" value="Undo" onclick="exTouchOff()">Undo Extouch triangle</button>
+    <button class="button button1" id = "eulertr" type="button" value="Euler's triangle" onclick="eulertrOn()">Euler's triangle</button>
+    <button class="button button2" id="undoeulertr" style="display:none;" type="button" value="Undo" onclick="eulertrOff()">Undo Euler's triangle</button>
+    <button class="button button1" id = "incentraltr" type="button" value="incentral triangle" onclick="incentraltrOn()">Incentral Triangle</button>
+    <button class="button button2" id="undoincentraltr" style="display:none;" type="button" value="Undo" onclick="incentraltrOff()">Undo Incentral Triangle</button>
+    <button class="button button1" id ="circumcircle" type="button" value="Circumscribed Circle" onclick="circumcircleOn()">Circumscribed Circle</button>
+    <button class="button button2" id="undocircumcircle" style="display:none;" type="button" value="Undo" onclick="circumcircleOff()">Undo Circumscribed Circle</button>
+    <button class="button button1" id = "innercircle" type="button" value="Inner Circle" onclick="innercircleOn()">Inner Circle</button>
+    <button class="button button2" id="undoinnercircle" style="display:none;" type="button" value="Undo" onclick="innercircleOff()">Undo Inner Circle</button>
+    <button class="button button1" id = "midpoints" type="button" value="Medians" onclick="midpointsOn()">Medians</button>
+    <button class="button button2" id="undomidpoints" style="display:none;" type="button" value="Undo" onclick="midpointsOff()">Undo Medians</button>
+    <button class="button button1" id = "altitudes" type="button" value="Altitudes" onclick="altitudesOn()">Altitudes</button>
+    <button class="button button2" id="undoaltitudes" style="display:none;" type="button" value="Undo" onclick="altitudesOff()">Undo Altitudes</button>
+    <button class="button button1" id = "angleBisectors" type="button" value="Angle Bisectors" onclick="angleBisectorsOn()">Angle Bisectors</button>
+    <button class="button button2" id="undoangleBisectors" style="display:none;" type="button" value="Undo" onclick="angleBisectorsOff()">Undo Angle Bisectors</button>
+
+  </div>
+  </menu>
+</div>
+</body>
+</html>

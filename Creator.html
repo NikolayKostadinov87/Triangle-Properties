@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>Creator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  left: -51%;
+  top:60%;
+  background-color:#696969;
+  overflow: hidden;
+  width: 0;
+  height: 50%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 50%;
+  left: 0;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+<body>
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large">Lets get in touch. Send me a message:</p>
+    <div style="margin-top:48px">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Varna , Bulgaria</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +359 150 787</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: nikossta4@gmail.com</p>
+      <p><i class="fa fa-facebook-official fa-fw w3-xxlarge w3-margin-right"> </i>Николай Костадинов</p>
+      <p><i class="fa fa-instagram fa-fw w3-xxlarge w3-margin-right"></i>nikolay.kostadinow</p>
+      <!-- Image of location/map -->
+      <div class="container">
+      <img src="DSC_6598.jpg" class="w3-image w3-greyscale" style="width:50%;">
+      <div class="overlay">
+        <div class="text">Nikolay Kostadinov</div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
